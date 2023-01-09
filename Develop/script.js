@@ -21,12 +21,12 @@ function writePassword() {
 function generatePassword() {
    let charSet = []
 
-   var passwordLength = prompt("Please enter a password with a character length between 8 - 128")
+   var passwordLength = prompt("Please enter a password with a character length between 8 - 128!")
    if (passwordLength < 8 || passwordLength > 128) {
-    alert("Incorrect password length")
+    alert("Incorrect password length!")
     generatePassword()
    } else if (passwordLength === "" || isNaN (passwordLength)) {
-    alert("Please enter a password with a character length between 8 and 128")
+    alert("Please enter a password with a character length between 8 and 128!")
     generateBtn()
    }
 
